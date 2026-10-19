@@ -1,0 +1,283 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #222222;
+  margin: 0;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #222222;
+  letter-spacing: 1px;
+}
+
+.navbar-brand span {
+  color: #f07836;
+}
+
+.navbar-brand:hover {
+  color: #222222;
+}
+
+.navbar .nav-link {
+  color: #333333;
+  font-weight: 600;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #f07836;
+}
+
+
+/* Hero section */
+.hero {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(248, 244, 239, 0.95) 0%,
+      rgba(248, 244, 239, 0.75) 45%,
+      rgba(248, 244, 239, 0.1) 100%
+    ),
+    url("basket.jpg")
+    center / cover no-repeat;
+
+  padding: 80px 0;
+}
+
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-tag {
+  color: #f07836;
+  font-size: 0.85rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(2.3rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.15;
+  margin-bottom: 25px;
+}
+
+.hero-description {
+  color: #666666;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  background-color: #f07836;
+  color: #ffffff;
+  padding: 14px 28px;
+  font-weight: bold;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.hero-btn:hover {
+  background-color: #d95e20;
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .hero {
+    min-height: 400px;
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+}
+
+
+.products-section {
+  background-color: #ffffff;
+}
+
+.section-tag {
+  color: #f07836;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.section-heading h2 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.section-heading > p:last-child {
+  color: #777777;
+}
+
+.product-card {
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.08);
+}
+
+.product-card .card-img-top {
+  height: 220px;
+  object-fit: cover;
+}
+
+.product-card .card-body {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.product-category {
+  color: #f07836;
+  font-size: 0.72rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.product-card .card-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-card .card-text {
+  color: #777777;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.shop-btn {
+  background-color: #222222;
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin-top: 10px;
+}
+
+.shop-btn:hover {
+  background-color: #f07836;
+  color: #ffffff;
+}
+
+/* Responsive product images */
+@media (max-width: 576px) {
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .product-card .card-img-top {
+    height: 250px;
+  }
+}
+
+
+/* Footer */
+.store-footer {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 50px 0 20px;
+}
+
+.footer-brand {
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.footer-brand span {
+  color: #f07836;
+}
+
+.footer-description {
+  color: #bbbbbb;
+  max-width: 350px;
+  line-height: 1.8;
+}
+
+.store-footer h5 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #bbbbbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #f07836;
+}
+
+.footer-divider {
+  border-color: #666666;
+  margin: 35px 0 20px;
+}
+
+.footer-copyright {
+  color: #999999;
+  font-size: 0.85rem;
+  margin-bottom: 0;
+}
+
+/* Responsive footer */
+@media (max-width: 767px) {
+  .store-footer {
+    text-align: center;
+  }
+
+  .footer-description {
+    margin: 0 auto;
+  }
+}
